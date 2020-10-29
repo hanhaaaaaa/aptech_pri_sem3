@@ -5,6 +5,8 @@
 ### `Install`
 
   Run **npm install** or **yarn**
+  
+  Ready on http://localhost:4200/
 
 ### `Install library`
 
