@@ -6,16 +6,27 @@ function Loading() {
 }
 
 // COMMON
-const AsyncView = Loadable({
-  loader: () => import("../components/view"),
+const AsyncHomePage = Loadable({
+  loader: () => import("../components/homepage"),
+  loading: Loading,
+});
+
+const AsyncSurvey = Loadable({
+  loader: () => import("../components/survey"),
   loading: Loading,
 });
 
 export const appRoutes = [
   {
     path: "/",
-    name: "view",
+    name: "homePage",
     exact: true,
-    component: AsyncView,
+    component: AsyncHomePage,
+  },
+  {
+    path: "/survey",
+    name: "survey",
+    exact: true,
+    component: AsyncSurvey,
   },
 ];

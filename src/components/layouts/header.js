@@ -1,10 +1,15 @@
 import React from "react";
+import "../../assets/styles/header.scss";
 
 function Header() {
   return (
     <>
-      <p>this is header</p>
-      <hr />
+      <div className="ecosite">ECOSITE</div>
+      <div className="menu">
+        <span>Surveys</span>
+        <span>FAQs</span>
+        <button>Sign in</button>
+      </div>
     </>
   );
 }

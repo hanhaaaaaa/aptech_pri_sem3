@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { appRoutes } from "../../routes";
+import "../../assets/styles/index.scss"
+import 'antd/dist/antd.css'; 
 import HeaderComponent from "./header";
 import FooterComponent from "./footer";
 
@@ -21,9 +23,9 @@ function App() {
           })}
         </Switch>
       </main>
-      <footer>
+      {/* <footer>
         <FooterComponent />
-      </footer>
+      </footer> */}
     </Router>
   );
 }
